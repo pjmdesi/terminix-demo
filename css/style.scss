@@ -1,0 +1,186 @@
+$Main: #0c8f43;
+$Alt: #000;
+$MainTr: #ed1c2440;
+$AltTr: #00a99d40;
+
+$hl: #ffee00;
+
+$B: black;
+
+$DGray: #333;
+$Gray: #545454;
+$LGray: #8c979e;
+
+$W: white;
+$B: black;
+
+::-moz-selection { /* Code for Firefox */
+  background: rgba($hl, .8);
+}
+
+::selection {
+  background: rgba($hl, .8);
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 72px;
+	font-weight: 400;
+	color: $Gray;
+}
+
+h1 {
+	font-size: 100%;
+	line-height: 110%;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 70%;
+	line-height: 120%;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 55%;
+	line-height: 115%;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 36%;
+	line-height: 125%;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 28%;
+	line-height: 125%;
+	font-weight: 400;
+}
+
+a, li {
+	color: $Alt;
+	transition: color .3s;
+	&:hover, &:focus {
+		color: $Main;
+	}
+}
+
+h1, h2, h3, h4, h5, p, a {
+	margin: 15px auto;
+}
+
+ul {
+	list-style: disc outside;
+	text-align: left;
+	li {
+		margin-bottom: 12px;
+		a {
+			width: 100%;
+			display: block;
+		}
+	}
+}
+
+form {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+input {
+	display: block;
+	border: 1px solid $Alt;
+	margin-right: 10px;
+	font-size: 35%;
+	font-weight: 600;
+	padding: 12px 16px;
+	height: 100%;
+}
+
+button, input[type=submit] {
+	color: $W;
+	background-color: $Main;
+	border: 1px solid $Main;
+	font-weight: 700;
+	padding: 5px 12px;
+	font-size: 50%;
+	display: block;
+	box-sizing: border-box;
+	max-width: 100%;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 25px;
+	img {
+		max-width: 400px;
+	}
+	menu {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+		font-size: 20px;
+		a {
+			margin: 32px;
+		}
+	}
+}
+
+main {
+	width: 100%;
+	>div {
+		width: 100%;
+		display: block;
+		box-sizing: border-box;
+		>*:first-child {
+			margin-top: 0;
+		}
+		>*:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+footer {
+	color: $W;
+	background-color: $DGray;
+	padding: 50px;
+	width: 100%;
+	text-align: center;
+	h5, p {
+		text-align: center;
+		font-weight: 600;
+	}
+}
+
+#job-container {
+	background: #222222CC;
+	color: $W;
+	padding: 50px;
+}
+
+.button-contianer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.share-element {
+	margin-top: 5px;
+	margin-left: 25px;
+}
+
+.job-details {
+	font-size: 24px;
+	max-width: 1200px;
+	margin: auto;
+	padding: 50px;
+}
